@@ -21,6 +21,10 @@ def CreateUser():
         return jsonify({"success": 400, "message" : "User creation failed"})
 
 
+@app.route('/', methods=['GET'])
+def users():
+    return "Welcome to the inventory flask API"
+
 @app.route('/allUsers', methods=['GET'])
 def users():
     return getAllUsers()
