@@ -22,7 +22,7 @@ def CreateUser():
 
 
 @app.route('/', methods=['GET'])
-def users():
+def welcome():
     return "Welcome to the inventory flask API"
 
 @app.route('/allUsers', methods=['GET'])
